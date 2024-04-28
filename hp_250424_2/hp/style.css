@@ -1,0 +1,815 @@
+/* dark mode */
+
+  .dark_mode {
+    background-color:#51656b;
+    color:#102029;
+  }
+  .dark_mode_body {
+    background-color:#bfd1cb;
+    color:#102029;
+  }
+
+  .every.dark_mode_every {
+    background-color:#51656b;
+    color:#102029;
+  }
+
+  .flex-container4.dark_mode_flex {
+    background-color:#51656b;
+    color:#102029;
+  }
+
+  .menu_deroulant.dark_mode_menu {
+    background-color: #51656b;
+    color:#102029;
+  }
+
+  .dark_mode a {
+    color:#102029;
+  }
+
+  .dark_mode_every a {
+    color:#102029;
+  }
+
+  .dark_mode_filtre {
+    background-color: #51656b;
+    color:#102029;
+  }
+
+  html,body {
+    position: relative;
+    height: 100%;
+  }
+
+
+  .darkLight {
+    width: 50px;
+
+    filter: drop-shadow(0rem 0rem 10px #102029);
+
+  
+  }
+ 
+
+  /*body*/
+
+  body {
+    background:#000000;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+
+  }
+
+  .turquoise {
+
+    color: #102029;
+
+  }
+
+
+  /* navigation */
+
+
+nav{
+    display: flex;
+    background-color: #102029;
+    align-items: center;
+    padding-left: 2%;
+    padding-right: 2%;
+    justify-content: space-between;
+ 
+}
+
+.text {
+  font-size: 20px;
+  font-family: 'HarryP', sans-serif;
+  text-align: right;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav.text {
+  float: right;
+}
+
+.nav .dark_mode{
+    background-color: #91a3a8;
+    color: #102029;
+}
+
+/* menu deroulant */
+
+.active{
+  display: none;
+}
+
+.wrap{
+  display: flex;
+  background-color: #102029;
+  padding-left: 2%;
+  padding-right: 2%;
+  z-index: 99;
+  position: relative;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.menu_deroulant{
+  font-size: 60px;
+  width: 65%;
+  height: 50px;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu_deroulant li {
+  height: auto;
+  text-align: left;
+  list-style: none;
+  font: normal bold 13px/1em Arial, Verdana, Helvetica;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  position: relative;
+
+}
+
+.menu_deroulant a {
+  padding: 18px 0;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+}
+
+
+
+.menu_deroulant li ul {
+  display: none;
+  height: auto;
+  margin: 0;
+  padding: 0;
+ 
+  background-color: #51656b;
+}
+
+.menu_deroulant li:hover ul {
+  display: block;
+  width: 150px;
+  background-color: #51656b;
+  justify-content: center;
+}
+
+.deroulant a {
+  font-size: 17px;
+  color: #102029;
+}
+.menu_deroulant li ul li {
+  display: flex;
+
+  background-color: #51656b;
+}
+
+
+/*supprime les points de la liste "li"*/
+
+ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    justify-content: center;
+}
+
+
+nav a:hover{
+    color: #c9aa66;
+}
+
+/*carrousel*/
+
+
+.swiper {
+    margin-top: 5%;
+    display: flex;
+    aspect-ratio: 3/1;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: none;
+    height: 100%;
+  }
+
+
+  .swiper-slide img {
+    display: flex;
+    height: 100%;
+    object-fit: cover;
+    flex-direction: vertical;
+  }
+/*
+  .swiper-slide2 {
+    display: flex;
+    flex-direction: vertical;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+*/
+
+  /*images responsive*/
+
+  .img-responsive, .cards{
+    width: 100%;
+    height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+}
+
+.img-responsive{
+    margin-top: 3%;
+}
+
+.cards{
+  margin: 3%;
+  width: 17%;
+}
+
+.cards2, .luna{
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+
+
+/*cards hover*/
+
+.cards:hover{
+  /* box-shadow: 10px 10px #c79b3d; */
+
+  filter: drop-shadow(0.5rem 0.5rem 10px  #c79b3d);
+  transform: scale(1.1);
+
+}
+
+
+  /*taille du logo*/
+
+.logo {
+    display: flex;
+    width: 60px;
+    height:fit-content;
+    margin-right: 3%;
+
+}
+
+/* flex container */
+
+.flex-container {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container1 {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flex-container3, .flex-container6 {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.flex-container4 {
+  display: flex;
+  flex-direction: vertical;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container4{
+  background-color: #102029;
+  padding: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: justify;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #91a3a8;
+  width: 47%;
+  aspect-ratio: 1/1;
+}
+
+.flex-container5 {
+  margin-top: 3%;
+  display: flex;
+}
+
+
+.flex-container7{
+  width: 100%;
+  display: flex;
+}
+
+.flex-container8{
+  width: min-content;
+  background-color: #91a3a8;
+}
+
+.flex-container9 {
+  margin-top: 3%;
+  display: flex;
+}
+
+
+
+/* footer */
+.footer{
+  display: flex;
+  margin-top: 3%;
+  clear:right;
+  justify-content: space-evenly;
+  width: 50%;
+
+}
+
+.every{
+  display: flex;
+  background-color: #102029;
+  height: 200px;
+  align-items: center;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin-top: 3%;
+  justify-content: center;
+  flex-direction: column;
+  padding: 4%;
+}
+
+
+.footer_menu {
+  width: 50%;
+  display: flex;
+  clear:right;
+  justify-content: space-evenly;
+}
+
+
+a{
+  display: flex;
+  text-decoration: none;
+  color: #91a3a8;
+  font-size: 15px;
+}
+
+/*booster*/
+
+.booster_gacha{
+  width: 20%;
+  padding-left: 3%;
+  padding-right: 3%;
+  padding-top: 3%;
+}
+
+.button:hover{
+  transform: scale(1.1);
+}
+
+.booster {
+  display: flex;
+  width: 100%;
+  justify-content: left;
+}
+
+.button {
+  display: block;
+  background-color: #c79b3d;
+  border: 0px;
+  padding: 10px;
+  width: 96%;
+  margin-top: 10px;
+  text-align:  center;
+  color: #102029;
+}
+
+.gacha_cards{
+  width: 100%;
+  display: flex;
+  border-right: 3px #c9aa66 solid;
+  border-left: 3px #c9aa66 solid;
+  border-top: 3px #c9aa66 solid;
+  border-bottom:  3px #c9aa66 solid;
+  justify-content: right;
+  margin-top: 3%;
+  margin-right: 3%;
+}
+
+
+.cards2, .luna{
+  width: 100%;
+  height: auto;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-left: 5%;
+}
+
+.luna{
+  padding-right: 5%;
+}
+
+.Text_booster{
+  background-color: #102029;
+  padding: 10%;
+  margin-top: 3%;
+  margin-left: 3%;
+  margin-right: 3%;
+  text-align: justify;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #91a3a8;
+  width: 93%;
+  aspect-ratio: 6/2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+/*les cartes*/
+.filtre{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #102029;
+  color:#91a3a8;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.li{
+  margin-right: 3%;
+  padding: 14px 16px;
+}
+
+.info{
+  display: block;
+  background-color: #c79b3d;
+  border: 10px;
+  padding: 10px;
+  width: 13%;
+  text-align: center;
+  color: #102029;
+  margin: 3%;
+  border-color: #51656b;
+  border-width: medium;
+}
+
+#harry{
+  display: none;
+  aspect-ratio: 2/3;
+}
+#draco{
+  display: none;
+  aspect-ratio: 2/3;
+}
+#hermione{
+  display: none;
+  aspect-ratio: 2/3;
+}
+#luna{
+  display: none;
+  aspect-ratio: 2/3;
+  justify-self: flex-end;
+}
+
+.info.h1 {
+  font-size: medium;
+}
+
+  /* Mon compte*/
+
+.connexion {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-image: url(medias/Mischief_Managed.webp);
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: 3%;
+  padding: 9%;
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1.85/1;
+  text-align: center;
+  border-style: double;
+  border-width: 10px;
+  border-color: #0f0f0f;
+}
+
+.bckg{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: hsl(34, 78%, 91%, 70%);
+  aspect-ratio: 1.85/1;
+  border-style: double;
+  border-width: 10px;
+  border-color: #c9aa66;
+  color: #0f0f0f;
+}
+
+.submit{
+  display: flex;
+  background-color: #c79b3d;
+  border: 0px;
+  padding: 10px;
+  width: 250px;
+  margin: auto;
+  text-align:  center;
+  color: #102029;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+
+}
+
+.submit:hover{
+  transform: scale(1.1);
+  cursor: url(/medias/harry_potter_wand.png), auto;
+ }
+
+.form{
+  font-weight: bold;
+}
+
+/* fave characters */
+
+.faveCharacters, .oneCharacter, .renameCharacter {
+
+  width: 94%;
+  display: flex;
+  border: 3px #c9aa66 solid;
+  margin-top: 3%;
+  margin-right: 3%;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 3%;
+}
+
+.oneCharacter{
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.renameCharacter{
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+.chara{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 50%;
+  align-items: center;
+}
+
+.linkButton, .renameButton {
+
+  display: flex;
+  background-color: #c79b3d;
+  border: 0px;
+  padding: 6px;
+  width: 91px;
+  color: #102029;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  justify-content: center;
+  margin-top: 2%;
+  height: 30px;
+}
+
+a.linkButton{
+  padding: 0px;
+  padding-top: 11px;
+}
+
+.renameButton{
+  margin-top: 0%;
+  height: 22px;
+  padding: 0px;
+  width: 115px;
+  padding-top: 3px;
+}
+
+.newCharacter .linkButton {
+  margin-top: 0%;
+}
+
+.newCharacter {
+  display: flex;
+  flex-direction: row;
+  height: 30px;
+}
+
+/*responsive*/
+
+@media screen and (max-width:800px) {
+  .bloc-1,.bloc-3,.bloc-4{
+      margin: 3%;
+      align-self: start;
+  }
+  .bloc-4{
+      margin-top: 0%;
+  }
+  .img-responsive{
+      margin-left: 3%;
+      margin-right: 3%;
+      align-self: start;
+  }
+  .bloc-2,.text-1{
+      margin-right: 3%;
+      margin-top: 3%;
+      align-self: start;
+  }
+  .text-1{
+      margin-left: 3%;
+  }
+
+  .cards{
+      margin: 3%;
+  }
+
+  nav a{
+      float: right;
+      text-align: right;
+      padding: 14px 16px;
+      text-decoration: none;
+      flex-wrap: wrap;
+      flex-direction: column;
+      
+  }
+
+  .menu{
+      flex-flow: column wrap;
+      display: none;
+  }
+
+  .text-1{
+      margin-left: 5%;
+  }
+
+  .flex-container7{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      width: 84%;
+  }
+
+  .gacha_cards{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 9%;
+    padding-right: 10%;
+    padding-bottom: 9%;
+    margin-left: 5%;
+  }
+
+  .cards2{
+      padding-right: 5%;
+  }
+
+  .booster_gacha{
+      width: 100%;
+      padding: 10%;
+  }
+
+  .flex-container5{
+      width: 91%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      margin: 5%;
+      display: flex;
+  }
+
+  .flex-container4{
+      display: flex;
+      width: 91%;
+      flex-wrap: wrap;
+      flex-direction: column;
+      display: flex;
+      margin-left: 24px;
+      margin-bottom: 50px;
+      justify-content: center;
+  }
+
+  .Text{
+      display: flex;
+      justify-content: right;
+      padding: 5px;
+      width: auto;
+      width: 91%;
+      margin-left: 4%;
+  }
+
+  .active{
+      display: flex;
+      font-size: 30px;
+  }
+
+  /*menu déroulant*/
+  .menu_deroulant{
+      flex-flow: column wrap;
+      display: none;
+  }
+
+  .connexion{
+      padding: 0%;
+  }
+
+.bckg{
+  width: 100%;
+}
+
+h1 {
+    font-size: 20px;
+}
+
+.form{
+    font-size: 15px;
+}
+
+.swiper{
+  height: 50%;
+}
+
+.Text_booster{
+  width: 74%;
+}
+
+h1{
+  font-size: 15px;
+}
+
+.flex-container3{
+  flex-wrap: wrap;
+  flex-direction: row;
+  padding-left: 5%;
+  padding-left: 5%;
+
+}
+
+#cards3{
+  flex: 30%;
+  padding: 5%;
+  margin: 0%;
+}
+
+.info {
+  padding: 10%;
+  font-size: 20;
+}
+
+}
+
+@media screen and (min-width:1580px) {
+
+.swiper{
+  height: 100%;
+}
+}

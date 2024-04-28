@@ -1,0 +1,160 @@
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+            
+    </head>
+
+    <body>
+        
+        <nav class="nav">
+
+        
+            <a href="index.html" class="text"><img src="medias/Hp-logo.png" alt="logo" class="logo" ></a>
+    
+            <!--
+            <button class="buttonDark" onclick="lightMode()"></button>
+            -->
+    
+            <img class="darkLight" src="medias/darkLight2.svg"  onclick="lightMode()">
+    
+    
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>        
+    
+            
+    
+            <ul class="menu_deroulant">
+                <li>
+                    <a href="boosters.html" class="text">Boosters</a>
+                </li>
+                <li>
+                    <a href="lescartes.html" class="text">Les cartes</a>
+                </li>
+                <li>
+                    <a href="echanger.html" class="text">Echanger</a>
+                </li>
+                <li>
+                    <a href="connexion.html" class="text">Mon Compte</a>
+                    
+                    <ul class="deroulant">
+                        <li><a href="connexion.html" class="text">Se connecter</a></li>
+                        <li><a href="#" class="text">Mes échanges</a></li>
+                        <li><a href="#" class="text">Mon deck</a></li>
+                        <li><a href="#" class="text">Paramètres</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+    
+        </nav>
+
+        <div class = "faveCharacters">
+            <h1>Favorite characters</h1>
+            <div class = "chara" id="agents"></div>
+    
+            <form class="newCharacter">
+                <input type="text" name="agent"/>
+    
+                <button class= "linkButton" type = "button" onclick = "sendAgent()">
+    
+                    valider
+                
+                </button>
+            </form>
+    
+            
+            <h2 ${agent.name}></h2>
+            
+    
+        </div>
+
+
+
+        
+
+        <!--
+        <div class="connexion">
+
+            <div class="bckg">
+                <h1> Connectez-vous pour continuer :</h1>
+
+                <form action="#" method="get" class="form">
+                    <label for="username">Username :</label>
+                    <input type="text" id="username" name="username"><br><br>
+                    <label for="password">Password :</label>
+                    <input type="text" id="password" name="password"><br><br>
+                    <input type="submit" value="Sign-in" class="submit">
+    
+                </form>
+            </div>
+
+        </div>
+        -->
+
+        <footer class="every">
+
+            <ul class="footer_menu">
+                <li><a href="boosters.html">Boosters</a></li>
+                <li><a href="lescartes.html">Les cartes</a></li>
+                <li><a href="connexion.html">Echanger</a></li>
+                <li><a href="connexion.html">Mon compte</a></li>
+            </ul>
+    
+            <ul class="footer">
+                <li><a href="">About</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Private</a></li>
+                <li><a href="">Policy</a></li>
+            </ul>
+    
+    
+        </footer>
+
+        <script>
+            // fetch data from api and display it
+            fetch('http://localhost:3000/agents')
+                .then((response) => response.json())
+                .then((data) => {
+                    console.log(data)
+                    let agents = document.querySelector('#agents')
+                    data.forEach((agent) => {
+                        agents.innerHTML += `
+                    <a href="agent.html?id=${agent.id}"> <h2>${agent.name}</h2> </a>
+                `
+                    })
+                })
+            
+            const sendAgent = async () => {
+
+                let agent = document.querySelector('input[name="agent"]').value
+
+                console.log(agent)
+
+                let response = await fetch('http://localhost:3000/agents/', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type' : 'application/json',
+                    },
+
+                    body: JSON.stringify({ name: agent }),
+                })
+
+                window.location.href = 'echanger.html'
+
+            }
+
+            
+            
+        
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+
+    </body>
+</html>

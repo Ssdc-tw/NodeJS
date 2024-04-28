@@ -1,0 +1,120 @@
+<html>
+    <head>
+
+        <link rel="stylesheet" href="style.css">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+
+    </head>
+    <body>
+
+        <nav class="nav">
+        
+            <a href="index.html" class="text"><img src="medias/Hp-logo.png" alt="logo" class="logo" ></a>
+    
+            <!--
+            <button class="buttonDark" onclick="lightMode()"></button>
+            -->
+    
+            <img class="darkLight" src="medias/darkLight2.svg"  onclick="lightMode()">
+    
+    
+            <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>        
+    
+            
+    
+            <ul class="menu_deroulant">
+                <li>
+                    <a href="boosters.html" class="text">Boosters</a>
+                </li>
+                <li>
+                    <a href="lescartes.html" class="text">Les cartes</a>
+                </li>
+                <li>
+                    <a href="echanger.html" class="text">Echanger</a>
+                </li>
+                <li>
+                    <a href="connexion.html" class="text">Mon Compte</a>
+                    
+                    <ul class="deroulant">
+                        <li><a href="connexion.html" class="text">Se connecter</a></li>
+                        <li><a href="#" class="text">Mes échanges</a></li>
+                        <li><a href="#" class="text">Mon deck</a></li>
+                        <li><a href="#" class="text">Paramètres</a></li>
+                    </ul>
+                
+                </li>
+            </ul>
+    
+        </nav>
+
+        <div class="flex-container2">
+            <img src="medias/Hp-image.jpg" alt="Banner" class="img-responsive">
+        </div>
+
+
+        <div class="filtre">
+            <ul class="filtre-text">
+                <li class="li">personnages</li>
+                <li class="li">sorts</li>
+                <li class="li">objets</li>
+            </ul>
+        </div>
+
+        <div class="flex-container3">
+            <img src="medias/Harry_Potter_Card.webp" alt="Banner" class="cards" id="cards3" onclick="hideHarry()">
+            <div id="harry" class="info"></div>
+            <img src="medias/Malfoy_Gang_Card.webp" alt="Banner" class="cards" id="cards3" onclick="hideDraco()">
+            <div id="draco" class="info"></div>
+            <img src="medias/Hermione_Granger_Card.webp" alt="Banner" class="cards" id="cards3" onclick="hideHermi()">
+            <div id="hermione" class="info"></div>
+            <img src="medias/Luna_Lovegood_Card.webp" alt="Banner" class="cards" id="cards3" onclick="hideLuna()">
+            <div id="luna" class="info"></div>
+        </div>
+
+
+        <div class="flex-container3">
+            <img src="medias/Card_Ashwinder.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Card_Baby_Manticores.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Card_Bombtastic_Bomb_Box.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Occamy_Card.webp" alt="Banner" class="cards" id="cards3">
+        </div>
+        <div class="flex-container3">
+            <img src="medias/Rubeus_Hagrid_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Grawp_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Cassandra_Vole_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Frey_Twins_Card.webp" alt="Banner" class="cards" id="cards3">
+        </div>
+        <div class="flex-container3">
+            <img src="medias/Stack_of_Monster_Book_of_Monsters_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Three-Headed_Puppy_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Thunderbird_Card.webp" alt="Banner" class="cards" id="cards3">
+            <img src="medias/Weasley's_Firework_Box_Card.webp" alt="Banner" class="cards" id="cards3">
+        </div>
+
+        <footer class="every">
+
+            <ul class="footer_menu">
+                <li><a href="boosters.html">Boosters</a></li>
+                <li><a href="lescartes.html">Les cartes</a></li>
+                <li><a href="connexion.html">Echanger</a></li>
+                <li><a href="connexion.html">Mon compte</a></li>
+            </ul>
+    
+            <ul class="footer">
+                <li><a href="">About</a></li>
+                <li><a href="">Cookies</a></li>
+                <li><a href="">Private</a></li>
+                <li><a href="">Policy</a></li>
+            </ul>
+    
+    
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <script src="main.js"></script>
+    </body>
+
+</html>
